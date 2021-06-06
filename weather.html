@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kaneohe Weather</title>
+    <style>
+
+      body{
+        background: radial-gradient(592px at 48.2% 50%, rgba(255, 255, 249, 0.6) 0%, rgb(160, 199, 254) 74.6%);
+      }
+
+      .currentWeather {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 48px;
+        color:#0f3057;
+      }
+
+
+
+      .highLow {
+        text-align: center;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 42px;
+        font-weight: lighter;
+      }
+
+      .highLow:hover{
+        
+        font-weight: bolder;
+        cursor: default;
+        transition: all 200ms ease-in-out;
+      }
+
+      .day{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 32px;
+        color: #00587a;
+ 
+      }
+
+      .day:hover{
+
+        font-weight: bolder;
+        transition: all 200ms ease-in-out;
+      }
+
+      .forecast{
+        text-align: center;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 26px;
+        color: #008891;
+
+      }
+
+
+      button {
+        width: 200px;
+        height: 150px;
+        font-size: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        background:white;
+        margin: 20px auto;
+        border: 1px solid #0f3057;
+        border-radius: 15px;
+        padding: 10px;
+        display: flex;
+        display: grid;
+        text-align: center;
+      }
+      
+      button:hover {
+        /* background: #f3f0d7; */
+        background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+        transition: all 200ms ease-in-out;
+        
+      }
+      
+      .cityButton {
+        width: 200px;
+        height: 50px;
+        font-size: 20px;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        color: #008891;
+        background: radial-gradient(401px at 50.6% -0.3%, rgba(255, 255, 255, 0.31) 1.2%, rgb(36, 212, 219) 100.2%);
+        margin: auto;
+        border: 1px solid #0f3057;
+        border-radius: 50px;
+        padding: 10px;
+        display: flex;
+        display: grid;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 255, 0.2);
+      }
+
+      .cityButton:hover {
+        background: linear-gradient(111.5deg, rgb(228, 247, 255) 21.9%, rgb(255, 216, 194) 92.2%);
+        color: #00587a;
+        font-weight: bolder;
+        cursor: pointer;
+        transition: all 200ms ease-in-out;
+      }
+
+      .attribution{
+        color: rgb(65, 62, 62);
+        font-size: 12px;
+           }
+
+
+    </style>
+  </head>
+
+  <body>
+    <h1 class="currentWeather">🌤</h1>
+    <h2 class="currentWeather">Currently 85° in Kaneohe</h1>
+    <div class="highLow">74°/ 85°</div>
+    <!-- <div class="hide">Low/High</div> -->
+    <div>
+      <div class="dailyForecast">
+          <button type="button">
+            <div class="day">
+            Tomorrow
+            <br/>
+            ☀️
+            <div class="forecast">
+            74°/ 85°
+            </div>
+          </button>
+      </div>
+
+      <div class="dailyForecast">
+        <button type="button">
+          <div class="day">
+          Monday
+          <br/>
+          ☀️
+          <div class="forecast">
+          74°/ 85°
+          </div>
+        </button>
+      </div>
+    
+      <div class="dailyForecast">
+        <button type="button">
+          <div class="day">
+          Tuesday
+          <br/>
+          ☀️
+          <div class="forecast">
+          74°/ 85°
+          </div>
+        </button>
+      </div>  
+    </div>
+  </div>
+
+
+
+  <button class="cityButton">Change City</button>
+  <div class="attribution">
+    made by <span><a href="https://github.com/arein107">berri</a></span>
+  </div>
+
+  </body>
+</html>
